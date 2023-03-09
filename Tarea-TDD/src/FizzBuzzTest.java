@@ -13,4 +13,10 @@ class FizzBuzzTest {
         assertEquals("1 o 2", result);
         assertEquals("1 o 2", result2);
     }
+    @Test
+    public void testFizzBuzzFor3(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.Comprobar(3);
+        assertEquals("Fizz", result);
+    }
 }
