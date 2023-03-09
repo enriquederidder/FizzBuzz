@@ -10,8 +10,8 @@ class FizzBuzzTest {
         String result = fizzBuzz.Comprobar(1);
         String result2 = fizzBuzz.Comprobar(2);
 
-        assertEquals("1 o 2", result);
-        assertEquals("1 o 2", result2);
+        assertNull(result);
+        assertNull(result2);
     }
     @Test
     public void testFizzBuzzFor3(){
@@ -19,4 +19,21 @@ class FizzBuzzTest {
         String result = fizzBuzz.Comprobar(3);
         assertEquals("Fizz", result);
     }
+    @Test
+    public void testFizzBuzzFor4y5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.Comprobar(4);
+        String result2 = fizzBuzz.Comprobar(5);
+
+        assertNull(result);
+        assertEquals("Buzz", result2);
+    }
+    @Test
+    public void testFizzBuzzFor6(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.Comprobar(6);
+        assertEquals("Fizz", result);
+    }
+
 }

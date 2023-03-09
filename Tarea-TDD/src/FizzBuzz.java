@@ -10,7 +10,7 @@ public class FizzBuzz {
         } else if (number % 5 == 0) {
             return mode = "Buzz";
         } else {
-            return mode = "1 o 2";
+            return null;
         }
     }
     public int getNumber() {
