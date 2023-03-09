@@ -35,5 +35,24 @@ class FizzBuzzTest {
         String result = fizzBuzz.Comprobar(6);
         assertEquals("Fizz", result);
     }
+    @Test
+    public void testFizzBuzzFor789() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        String result = fizzBuzz.Comprobar(7);
+        String result2 = fizzBuzz.Comprobar(8);
+        String result3 = fizzBuzz.Comprobar(9);
+
+        assertNull(result);
+        assertNull(result2);
+        assertEquals("Fizz", result3);
+
+    }
+    @Test
+    public void testFizzBuzzFor10(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.Comprobar(10);
+        assertEquals("Buzz", result);
+    }
 
 }
