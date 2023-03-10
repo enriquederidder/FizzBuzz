@@ -57,7 +57,6 @@ class FizzBuzzTest {
     @Test
     public void testFizzBuzzOnzeDoceTreceCatorce(){
         FizzBuzz fizzBuzz = new FizzBuzz();
-
         String once = fizzBuzz.Comprobar(11);
         String doce = fizzBuzz.Comprobar(12);
         String trece= fizzBuzz.Comprobar(13);
