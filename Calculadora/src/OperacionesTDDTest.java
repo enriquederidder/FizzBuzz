@@ -38,4 +38,11 @@ class OperacionesTDDTest {
         int sum = oper.calc(1,2,-2);
         assertEquals(-1, sum);
     }
+    @Test
+    public void DevuelveNumeroSuperior(){
+        OperacionesTDD oper = new OperacionesTDD();
+
+        int sum = oper.calc(5, 1002);
+        assertEquals(5, sum);
+    }
 }
