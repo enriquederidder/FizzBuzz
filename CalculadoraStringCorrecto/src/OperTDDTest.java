@@ -18,9 +18,19 @@ public class OperTDDTest {
         assertEquals(3, resultado);
     }
     @Test
-    public void pruebaSumaVacio() {
+    public void pruebaSumaUnoUnoyDos() {
         int resultado = OperTDD.suma("1,1,2");
         assertEquals(4, resultado);
+    }
+    @Test
+    public void pruebaSumaVacio() {
+        int resultado = OperTDD.suma("1,2,");
+        assertEquals(-1, resultado);
+    }
+    @Test
+    public void pruebaSumaNegativo() {
+        int resultado = OperTDD.suma("1,2,-2");
+        assertEquals(-1, resultado);
     }
 }
 
