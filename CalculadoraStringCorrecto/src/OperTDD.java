@@ -11,7 +11,12 @@ public class OperTDD {
             }
             int valor = Integer.parseInt(numero);
             if (valor < 0) {
+                System.out.println("Numero negativo");
                 return -1;
+            }
+            if (valor > 1000) {
+                System.out.println("Numero mayor a 1000");
+                return 5;
             }
             resultado += valor;
         }
@@ -20,6 +25,4 @@ public class OperTDD {
         }
         return resultado;
     }
-
-
 }

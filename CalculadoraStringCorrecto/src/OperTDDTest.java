@@ -32,5 +32,11 @@ public class OperTDDTest {
         int resultado = OperTDD.suma("1,2,-2");
         assertEquals(-1, resultado);
     }
+    @Test
+    public void pruebaSumaMayorMil() {
+        int resultado = OperTDD.suma("5,1002");
+        assertEquals(5, resultado);
+    }
+
 }
 
