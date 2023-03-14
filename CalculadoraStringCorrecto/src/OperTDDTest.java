@@ -12,4 +12,15 @@ public class OperTDDTest {
         int resultado = OperTDD.suma("1");
         assertEquals(1, resultado);
     }
+    @Test
+    public void pruebaSuma1y2() {
+        int resultado = OperTDD.suma("1,2");
+        assertEquals(3, resultado);
+    }
+    @Test
+    public void pruebaSumaVacio() {
+        int resultado = OperTDD.suma("1,1,2");
+        assertEquals(4, resultado);
+    }
 }
+
