@@ -26,7 +26,6 @@ class OperacionesTDDTest {
     @Test
     public void DevuelveNumeroVacio(){
         OperacionesTDD oper = new OperacionesTDD();
-
         int sum = OperacionesTDD.suma("1,2,");
         assertEquals(-1, sum);
     }
